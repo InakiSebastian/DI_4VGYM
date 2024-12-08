@@ -2,6 +2,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
     @for (activity of listaActividades; track $index) {
     <app-actividad
+      [index]="$index + 1"
       [fecha]="activity.fecha"
       [lugar]="activity.lugar"
       [monitor]="activity.monitor"
