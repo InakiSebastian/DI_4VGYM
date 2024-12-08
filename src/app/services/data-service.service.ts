@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Activity } from '../models/activity.model';
 
 @Injectable({
   providedIn: 'root',
@@ -7,97 +8,97 @@ export class DataServiceService {
   constructor() {}
 
   devolverListaActividades() {
-    let events = [
-      {
-        fecha: '5 de enero, 2025',
-        lugar: 'Gimnasio Central, Madrid',
-        monitor: 'Juan Pérez',
-        tipo: 'Cardio',
-      },
-      {
-        fecha: '10 de enero, 2025',
-        lugar: 'Gimnasio Fitness, Barcelona',
-        monitor: 'Ana Gómez',
-        tipo: 'Pesas',
-      },
-      {
-        fecha: '12 de enero, 2025',
-        lugar: 'Power Gym, Valencia',
-        monitor: 'Carlos Rodríguez',
-        tipo: 'Yoga',
-      },
-      {
-        fecha: '15 de enero, 2025',
-        lugar: 'Fit Club, Sevilla',
-        monitor: 'Laura Martínez',
-        tipo: 'Zumba',
-      },
-      {
-        fecha: '20 de enero, 2025',
-        lugar: 'Gimnasio Total, Bilbao',
-        monitor: 'Pedro López',
-        tipo: 'Entrenamiento funcional',
-      },
-      {
-        fecha: '25 de enero, 2025',
-        lugar: 'Sport Center, Alicante',
-        monitor: 'Marta García',
-        tipo: 'Pilates',
-      },
-      {
-        fecha: '1 de febrero, 2025',
-        lugar: 'Flex Gym, Zaragoza',
-        monitor: 'David Sánchez',
-        tipo: 'HIIT',
-      },
-      {
-        fecha: '3 de febrero, 2025',
-        lugar: 'Gym Pro, Málaga',
-        monitor: 'Luis Fernández',
-        tipo: 'Cardio',
-      },
-      {
-        fecha: '8 de febrero, 2025',
-        lugar: 'FitLife, Madrid',
-        monitor: 'Raúl González',
-        tipo: 'Pesas',
-      },
-      {
-        fecha: '12 de febrero, 2025',
-        lugar: 'VitalGym, Barcelona',
-        monitor: 'Sofía Ruiz',
-        tipo: 'Yoga',
-      },
-      {
-        fecha: '15 de febrero, 2025',
-        lugar: 'Strong Gym, Valencia',
-        monitor: 'José Martínez',
-        tipo: 'Entrenamiento funcional',
-      },
-      {
-        fecha: '18 de febrero, 2025',
-        lugar: 'Energy Gym, Bilbao',
-        monitor: 'Claudia Pérez',
-        tipo: 'Zumba',
-      },
-      {
-        fecha: '22 de febrero, 2025',
-        lugar: 'Active Fit, Sevilla',
-        monitor: 'Antonio Rodríguez',
-        tipo: 'HIIT',
-      },
-      {
-        fecha: '28 de febrero, 2025',
-        lugar: 'MaxFit, Alicante',
-        monitor: 'Sara Torres',
-        tipo: 'Pilates',
-      },
-      {
-        fecha: '2 de marzo, 2025',
-        lugar: 'StrongFit, Zaragoza',
-        monitor: 'Fernando López',
-        tipo: 'Pesas',
-      },
+    let events: Activity[] = [
+      new Activity(
+        '5 de enero, 2025',
+        'Gimnasio Central, Madrid',
+        'Juan Pérez',
+        'Cardio'
+      ),
+      new Activity(
+        '10 de enero, 2025',
+        'Gimnasio Fitness, Barcelona',
+        'Ana Gómez',
+        'Pesas'
+      ),
+      new Activity(
+        '12 de enero, 2025',
+        'Power Gym, Valencia',
+        'Carlos Rodríguez',
+        'Yoga'
+      ),
+      new Activity(
+        '15 de enero, 2025',
+        'Fit Club, Sevilla',
+        'Laura Martínez',
+        'Zumba'
+      ),
+      new Activity(
+        '20 de enero, 2025',
+        'Gimnasio Total, Bilbao',
+        'Pedro López',
+        'Entrenamiento funcional'
+      ),
+      new Activity(
+        '25 de enero, 2025',
+        'Sport Center, Alicante',
+        'Marta García',
+        'Pilates'
+      ),
+      new Activity(
+        '1 de febrero, 2025',
+        'Flex Gym, Zaragoza',
+        'David Sánchez',
+        'HIIT'
+      ),
+      new Activity(
+        '3 de febrero, 2025',
+        'Gym Pro, Málaga',
+        'Luis Fernández',
+        'Cardio'
+      ),
+      new Activity(
+        '8 de febrero, 2025',
+        'FitLife, Madrid',
+        'Raúl González',
+        'Pesas'
+      ),
+      new Activity(
+        '12 de febrero, 2025',
+        'VitalGym, Barcelona',
+        'Sofía Ruiz',
+        'Yoga'
+      ),
+      new Activity(
+        '15 de febrero, 2025',
+        'Strong Gym, Valencia',
+        'José Martínez',
+        'Entrenamiento funcional'
+      ),
+      new Activity(
+        '18 de febrero, 2025',
+        'Energy Gym, Bilbao',
+        'Claudia Pérez',
+        'Zumba'
+      ),
+      new Activity(
+        '22 de febrero, 2025',
+        'Active Fit, Sevilla',
+        'Antonio Rodríguez',
+        'HIIT'
+      ),
+      new Activity(
+        '28 de febrero, 2025',
+        'MaxFit, Alicante',
+        'Sara Torres',
+        'Pilates'
+      ),
+      new Activity(
+        '2 de marzo, 2025',
+        'StrongFit, Zaragoza',
+        'Fernando López',
+        'Pesas'
+      ),
     ];
 
     return events;
