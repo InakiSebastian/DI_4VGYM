@@ -12,8 +12,14 @@ import { ContenedorActividadesComponent } from "./contenedor-actividades/contene
   
 })
 export class AppComponent {
+
+
   title = 'gym4v';
+
   ngOnInit(): void {
     initFlowbite();
+
   }
+
+
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,input } from '@angular/core';
 
 @Component({
   selector: 'app-actividad',
@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './actividad.component.scss'
 })
 export class ActividadComponent {
+  index = input();
+  fecha = input("POR DEFINIR");
+  lugar = input("POR DEFINIR");
+  monitor = input("POR DEFINIR");
+  tipo = input("POR DEFINIR");
 
 }

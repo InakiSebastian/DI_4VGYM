@@ -1,15 +1,17 @@
-<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-        Apple MacBook Pro 17"
-    </th>
-    <td class="px-6 py-4">
-        Silver
-    </td>
-    <td class="px-6 py-4">
-        Laptop
-    </td>
-    <td class="px-6 py-4">
-        $2999
-    </td>
+<a
+  href="#"
+  class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+>
+  <h5
+    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+  >
+    Actividad {{index()}}
+  </h5>
 
-</tr>
+  <div class="mt-2 text-gray-700 dark:text-gray-400">
+    <p><strong>Fecha:</strong> {{fecha()}}</p>
+    <p><strong>Lugar:</strong> {{lugar()}}</p>
+    <p><strong>Monitor:</strong> {{monitor()}}</p>
+    <p><strong>Tipo:</strong> {{tipo()}}</p>
+  </div>
+</a>

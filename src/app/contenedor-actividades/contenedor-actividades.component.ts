@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActividadComponent } from "../actividad/actividad.component";
+import { DataServiceService } from '../services/data-service.service';
 
 @Component({
   selector: 'app-contenedor-actividades',
@@ -8,5 +9,12 @@ import { ActividadComponent } from "../actividad/actividad.component";
   styleUrl: './contenedor-actividades.component.scss'
 })
 export class ContenedorActividadesComponent {
+
+  
+  // constructor(private dataService: DataServiceService){}; // NO CONSIGO QUE FUNCIONE.... MUESTRA ERROR NO SE LLEGA A INICIALIZAR
+  dataService = new DataServiceService();
+
+  listaActividades = this.dataService.devolverListaActividades();
+
 
 }
